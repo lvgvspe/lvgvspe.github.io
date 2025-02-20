@@ -6,4 +6,6 @@ const nextConfig: NextConfig = {
   /* config options here */
 };
 
+module.exports = nextConfig;
+
 export default nextConfig;
