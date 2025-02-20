@@ -1,101 +1,194 @@
-import Image from "next/image";
+"use client";
+
+import { Card, CardContent } from "@/components/ui/card";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
+import { Separator } from "@/components/ui/separator";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div className="max-w-3xl mx-auto p-6 space-y-6 my-5">
+      {/* Seção de Perfil */}
+      <div className="flex items-center space-x-4">
+        <Avatar className="w-20 h-20">
+          <AvatarImage src="/avatar.jpg" alt="Avatar" />
+          <AvatarFallback>LC</AvatarFallback>
+        </Avatar>
+        <div>
+          <h1 className="text-2xl font-bold">Lucas Camargo</h1>
+          <p className="text-gray-500">
+            Desenvolvedor Full Stack | React & Python
+          </p>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </div>
+      <p className="text-gray-700 dark:text-gray-300">
+        Olá! Meu nome é Lucas. Sou desenvolvedor de software há 3 anos, apaixonado por
+        criar soluções inovadoras e eficientes. Com experiência em diversas
+        tecnologias, estou sempre buscando aprender e me aprimorar.
+      </p>
+
+      {/* Seção de Habilidades */}
+      <ProjectCard
+        title="Habilidades"
+        tags={[
+          { name: "Python" },
+          { name: "Flask", variant: "outline" },
+          { name: "FastAPI", variant: "outline" },
+          { name: "Tk Interface", variant: "outline" },
+          { name: "TypeScript/JavaScript" },
+          { name: "React/React Native", variant: "outline" },
+          {
+            name: "Electron/Nextron (Windows, Linux e MacOS)",
+            variant: "outline",
+          },
+          { name: "Expo (Android e iOS)", variant: "outline" },
+          { name: "Next.js", variant: "outline" },
+          { name: "Node.js", variant: "outline" },
+          { name: "Docker" },
+          { name: "AWS" },
+          { name: "Lambda", variant: "outline" },
+          { name: "Gateway", variant: "outline" },
+          { name: "ECS/Fargate", variant: "outline" },
+          { name: "S3", variant: "outline" },
+          { name: ".NET" },
+          { name: "Windows Forms", variant: "outline" },
+          { name: "SQL" },
+          { name: "PostgreSQL", variant: "outline" },
+          { name: "MySQL", variant: "outline" },
+          { name: "SQLite", variant: "outline" },
+          { name: "Git" },
+          { name: "Linux" },
+          { name: "Web Hosting" },
+        ]}
+      />
+
+      <Separator />
+
+      {/* Projetos em Destaque */}
+      <h2 className="text-xl font-semibold">Projetos Recentes</h2>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <ProjectCard
+          title="Projeto Totem"
+          description="Aplicativo Windows e API em nuvem para totem de autoatendimento."
+          tags={[
+            { name: "Electron/Nextron" },
+            { name: "React" },
+            { name: "Next.js" },
+            { name: "Mantine" },
+            { name: "Gateway de pagamento/PDV" },
+            { name: "AWS" },
+            { name: "Python" },
+          ]}
+        />
+        <ProjectCard
+          title="Robô Viral"
+          description="Aplicativo Windows e API em nuvem para replicação de vídeos entre diferentes redes sociais."
+          tags={[
+            { name: "Electron/Nextron" },
+            { name: "React" },
+            { name: "Next.js" },
+            { name: "AWS" },
+            { name: "Python" },
+          ]}
+        />
+        <ProjectCard
+          title="Vision Web"
+          description="Aplicativo Android TV e dashboard Web com API em nuvem para exibição de anúncios publicitários."
+          tags={[
+            { name: "Expo (Android)" },
+            { name: "React Native" },
+            { name: "Node.js" },
+            { name: "AWS" },
+            { name: "Python" },
+          ]}
+        />
+        <ProjectCard
+          title="ElectroKraft"
+          description="Sistema web de gerenciamento de pagamentos e controle de horário de prestadores de serviço."
+          tags={[
+            { name: "React" },
+            { name: "Mantine" },
+            { name: "Web Hosting" },
+            { name: "PostgreSQL" },
+            { name: "Vercel" },
+          ]}
+        />
+      </div>
+
+      <Separator />
+
+      {/* Chamada para Contato */}
+      <div className="text-center">
+        <h2 className="text-lg font-semibold mb-2">
+          Interessado em trabalhar comigo?
+        </h2>
+        <DropdownMenu>
+          <DropdownMenuTrigger asChild>
+            <Button>Entre em contato</Button>
+          </DropdownMenuTrigger>
+          <DropdownMenuContent align="end">
+            <DropdownMenuItem
+              onClick={() => window.open("https://wa.me/5562998030059")}
+            >
+              WhatsApp
+            </DropdownMenuItem>
+            <DropdownMenuItem
+              onClick={() => window.open("mailto:lvgvspe@icloud.com")}
+            >
+              Email
+            </DropdownMenuItem>
+            <DropdownMenuItem
+              onClick={() => window.open("https://t.me/lvgvspe")}
+            >
+              Telegram
+            </DropdownMenuItem>
+            <DropdownMenuItem onClick={() => window.open("tel:62998030059")}>
+              Telefone
+            </DropdownMenuItem>
+          </DropdownMenuContent>
+        </DropdownMenu>
+      </div>
+      <p className="text-right text-xs">Lucas Camargo © 2025</p>
     </div>
+  );
+}
+
+interface ProjectCardProps {
+  title: string;
+  description?: string;
+  tags: {
+    name: string;
+    variant?:
+      | "default"
+      | "secondary"
+      | "destructive"
+      | "outline"
+      | null
+      | undefined;
+  }[];
+}
+
+function ProjectCard({ title, description, tags }: ProjectCardProps) {
+  return (
+    <Card className="pt-4">
+      <CardContent>
+        <h3 className="text-lg font-semibold">{title}</h3>
+        <p className="text-gray-500 text-sm">{description}</p>
+        <div className="mt-2 flex flex-wrap gap-2">
+          {tags.map((tag) => (
+            <Badge key={tag.name} variant={tag.variant}>
+              {tag.name}
+            </Badge>
+          ))}
+        </div>
+      </CardContent>
+    </Card>
   );
 }
