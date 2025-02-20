@@ -33,7 +33,6 @@ jobs:
       - name: Build with Next.js 🏗️
         run: |
           npx next build
-          npx next export
 
       - name: List directory contents
         run: ls -la
