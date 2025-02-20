@@ -32,7 +32,7 @@ jobs:
 
       - name: Build with Next.js 🏗️
         run: |
-          npm run build
+          npx next build
 
       - name: List directory contents
         run: ls -la
