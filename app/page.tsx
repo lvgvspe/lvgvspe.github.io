@@ -45,7 +45,7 @@ export default function Home() {
           { name: "TypeScript/JavaScript" },
           { name: "React/React Native", variant: "outline" },
           {
-            name: "Electron/Nextron (Windows, Linux e MacOS)",
+            name: "Electron/Nextron (Windows, Linux e macOS)",
             variant: "outline",
           },
           { name: "Expo (Android e iOS)", variant: "outline" },
