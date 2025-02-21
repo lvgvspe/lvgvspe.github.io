@@ -33,9 +33,9 @@ export default function Home() {
         </div>
       </div>
       <p className="text-gray-700 dark:text-gray-300">
-        Olá! Meu nome é Lucas. Sou desenvolvedor de software há 3 anos, apaixonado por
-        criar soluções inovadoras e eficientes. Com experiência em diversas
-        tecnologias, estou sempre buscando aprender e me aprimorar.
+        Olá! Meu nome é Lucas. Sou desenvolvedor de software há 3 anos,
+        apaixonado por criar soluções inovadoras e eficientes. Com experiência
+        em diversas tecnologias, estou sempre buscando aprender e me aprimorar.
       </p>
 
       {/* Seção de Habilidades */}
@@ -129,35 +129,40 @@ export default function Home() {
       <Separator />
 
       {/* Chamada para Contato */}
-      <div className="text-center">
+      <div className="flex flex-col text-center">
         <h2 className="text-lg font-semibold mb-2">
           Interessado em trabalhar comigo?
         </h2>
-        <DropdownMenu>
-          <DropdownMenuTrigger asChild>
-            <Button>Entre em contato</Button>
-          </DropdownMenuTrigger>
-          <DropdownMenuContent align="end">
-            <DropdownMenuItem
-              onClick={() => window.open("https://wa.me/5562998030059")}
-            >
-              WhatsApp
-            </DropdownMenuItem>
-            <DropdownMenuItem
-              onClick={() => window.open("mailto:lvgvspe@icloud.com")}
-            >
-              Email
-            </DropdownMenuItem>
-            <DropdownMenuItem
-              onClick={() => window.open("https://t.me/lvgvspe")}
-            >
-              Telegram
-            </DropdownMenuItem>
-            <DropdownMenuItem onClick={() => window.open("tel:62998030059")}>
-              Telefone
-            </DropdownMenuItem>
-          </DropdownMenuContent>
-        </DropdownMenu>
+        <div className="space-x-4 space-y-4">
+          <DropdownMenu>
+            <DropdownMenuTrigger asChild>
+              <Button>Entre em contato</Button>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent align="end">
+              <DropdownMenuItem
+                onClick={() => window.open("https://wa.me/5562998030059")}
+              >
+                WhatsApp
+              </DropdownMenuItem>
+              <DropdownMenuItem
+                onClick={() => window.open("mailto:lvgvspe@icloud.com")}
+              >
+                Email
+              </DropdownMenuItem>
+              <DropdownMenuItem
+                onClick={() => window.open("https://t.me/lvgvspe")}
+              >
+                Telegram
+              </DropdownMenuItem>
+              <DropdownMenuItem onClick={() => window.open("tel:62998030059")}>
+                Telefone
+              </DropdownMenuItem>
+            </DropdownMenuContent>
+          </DropdownMenu>
+          <Button onClick={() => window.open("https://github.com/lvgvspe")}>
+            Saiba mais
+          </Button>
+        </div>
       </div>
       <p className="text-right text-xs">Lucas Camargo © 2025</p>
     </div>
