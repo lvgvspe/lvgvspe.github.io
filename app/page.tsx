@@ -11,10 +11,14 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { Separator } from "@/components/ui/separator";
+import { ModeToggle } from "@/components/ui/toggle-theme";
 
 export default function Home() {
   return (
-    <div className="max-w-3xl mx-auto p-6 space-y-6 my-5">
+    <div className="max-w-3xl mx-auto p-6 space-y-6 mb-10">
+      <div className="fixed right-0 bottom-0 m-5">
+        <ModeToggle />
+      </div>
       {/* Seção de Perfil */}
       <div className="flex items-center space-x-4">
         <Avatar className="w-20 h-20">
