@@ -67,6 +67,14 @@ const chartConfig = {
   net: {
     label: ".NET",
     color: generatePastelColor(3),
+  },
+  bash: {
+    label: "Bash",
+    color: generatePastelColor(4),
+  },
+  powershell: {
+    label: "PowerShell",
+    color: generatePastelColor(5),
   }
 } satisfies ChartConfig;
 

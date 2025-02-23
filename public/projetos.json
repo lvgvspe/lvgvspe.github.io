@@ -19,7 +19,8 @@
       "dataFim": "2025-02-01",
       "linguagens": [
         "javascript",
-        "python"
+        "python",
+        "powershell"
       ],
       "tecnologias": [
         "electron",
@@ -58,7 +59,8 @@
       "dataFim": "2025-02-01",
       "linguagens": [
         "javascript",
-        "python"
+        "python",
+        "powershell"
       ],
       "tecnologias": [
         "electron",
@@ -95,7 +97,9 @@
       "linguagens": [
         "python",
         "net",
-        "javascript"
+        "javascript",
+        "bash",
+        "powershell"
       ],
       "tecnologias": [
         "docker"

@@ -36,7 +36,7 @@ const chartData = Object.keys(techCount)
 
 function generatePastelColor(index: number): string {
   let angulo = 200;
-  let maxCol = 4; // pra desativar é só colocar maior do que o tamanho da lista
+  let maxCol = 7; // pra desativar é só colocar maior do que o tamanho da lista
   let deslocamento = 8;
 
   // Gera um matiz (hue) baseado no índice, distribuído uniformemente
