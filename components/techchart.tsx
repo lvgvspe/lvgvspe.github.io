@@ -26,16 +26,17 @@ const techCount = projetos.data.reduce((acc, projeto) => {
   return acc;
 }, {} as Record<string, number>);
 
-
-const chartData = Object.keys(techCount).map((tech) => ({
-  name: tech,
-  value: techCount[tech],
-  fill: `var(--color-${tech.toLowerCase()})`,
-}));
+const chartData = Object.keys(techCount)
+  .map((tech) => ({
+    name: tech,
+    value: techCount[tech],
+    fill: `var(--color-${tech.toLowerCase()})`,
+  }))
+  .sort((a, b) => b.value - a.value);
 
 function generatePastelColor(index: number): string {
   let angulo = 200;
-  let maxCol = 5 // pra desativar é só colocar maior do que o tamanho da lista
+  let maxCol = 5; // pra desativar é só colocar maior do que o tamanho da lista
   let deslocamento = 8;
 
   // Gera um matiz (hue) baseado no índice, distribuído uniformemente
@@ -72,7 +73,7 @@ const chartConfig = {
     color: generatePastelColor(4),
   },
   electron: {
-    label: "Electron/Nextron",
+    label: "Electron",
     color: generatePastelColor(5),
   },
   postgresql: {
