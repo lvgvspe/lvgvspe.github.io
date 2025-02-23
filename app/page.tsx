@@ -1,6 +1,5 @@
 "use client";
 
-import { Card, CardContent } from "@/components/ui/card";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -12,6 +11,37 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { Separator } from "@/components/ui/separator";
 import { ModeToggle } from "@/components/ui/toggle-theme";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import {
+  ChartConfig,
+  ChartContainer,
+  ChartTooltip,
+  ChartTooltipContent,
+} from "@/components/ui/chart";
+import {
+  BarChart,
+  Bar,
+  XAxis,
+  YAxis,
+  Tooltip,
+  Legend,
+  PieChart,
+  Pie,
+  Cell,
+  CartesianGrid,
+  TooltipProps,
+} from "recharts";
+import { TrendingUp } from "lucide-react";
+import projetos from "@/public/projetos.json";
+import { LangChart } from "@/components/langchart";
+import { TechChart } from "@/components/techchart";
 
 export default function Home() {
   return (
@@ -124,6 +154,15 @@ export default function Home() {
             { name: "Vercel" },
           ]}
         />
+      </div>
+
+      <Separator />
+
+      {/* Seção de Gráficos */}
+      <h2 className="text-xl font-semibold">Estatísticas dos projetos</h2>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <LangChart />
+        <TechChart />
       </div>
 
       <Separator />

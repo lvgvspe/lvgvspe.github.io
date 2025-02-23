@@ -1,0 +1,142 @@
+{
+  "name": "Projetos",
+  "schema": {
+    "nome": "string",
+    "valor": "number",
+    "contratante": "string",
+    "dataInicio": "string",
+    "dataFim": "string|null",
+    "linguagens": "string[]",
+    "tecnologias": "string[]",
+    "notas": "string|null"
+  },
+  "data": [
+    {
+      "nome": "Projeto Totem",
+      "valor": 10000,
+      "contratante": "MVP Mídia",
+      "dataInicio": "2024-08-01",
+      "dataFim": "2025-02-01",
+      "linguagens": [
+        "typescript",
+        "python",
+        "sql"
+      ],
+      "tecnologias": [
+        "electron",
+        "react",
+        "nextjs",
+        "aws",
+        "docker",
+        "mysql"
+      ],
+      "notas": "Sistema para windows de totem de autoatendimento, exibição de infos/publicidade e captação de oferta/dízimo para igrejas"
+    },
+    {
+      "nome": "Projeto Vision",
+      "valor": 5000,
+      "contratante": "MVP Mídia",
+      "dataInicio": "2024-10-01",
+      "dataFim": "2025-02-01",
+      "linguagens": [
+        "typescript",
+        "python",
+        "sql"
+      ],
+      "tecnologias": [
+        "expo",
+        "reactnative",
+        "aws",
+        "docker",
+        "mysql",
+        "postgresql"
+      ],
+      "notas": "Sistema android e web para exibição de anúncios em Android TV"
+    },
+    {
+      "nome": "Projeto Viral",
+      "valor": 15000,
+      "contratante": "MVP Mídia",
+      "dataInicio": "2024-11-01",
+      "dataFim": "2025-02-01",
+      "linguagens": [
+        "typescript",
+        "python",
+        "sql"
+      ],
+      "tecnologias": [
+        "electron",
+        "react",
+        "nextjs",
+        "aws",
+        "docker",
+        "mysql"
+      ],
+      "notas": "Sistema web de replicação de vídeos entre redes sociais"
+    },
+    {
+      "nome": "ElectroKraft",
+      "valor": 0,
+      "contratante": "ElectroKraft",
+      "dataInicio": "2024-02-01",
+      "dataFim": "2024-03-01",
+      "linguagens": [
+        "typescript",
+        "sql"
+      ],
+      "tecnologias": [
+        "react",
+        "nextjs",
+        "postgresql"
+      ],
+      "notas": "Sistema de gerenciamento de horários e vencimentos de prestadores de serviço de eletrotécnica"
+    },
+    {
+      "nome": "Projeto Zips",
+      "valor": 60000,
+      "contratante": "conf",
+      "dataInicio": "2023-02-01",
+      "dataFim": null,
+      "linguagens": [
+        "python",
+        "net",
+        "php",
+        "typescript"
+      ],
+      "tecnologias": [
+        "docker"
+      ],
+      "notas": "Segurança da informação."
+    },
+    {
+      "nome": "Site para designer",
+      "valor": 250,
+      "contratante": "Workana",
+      "dataInicio": "2021-02-01",
+      "dataFim": "2021-02-15",
+      "linguagens": [
+        "typescript"
+      ],
+      "tecnologias": [
+        "react",
+        "nextjs"
+      ],
+      "notas": "Site para um designer, meu primeiro projeto, não tô lembrando o nome"
+    },
+    {
+      "nome": "Fichas clínicas",
+      "valor": 500,
+      "contratante": "Workana",
+      "dataInicio": "2024-02-01",
+      "dataFim": "2024-06-01",
+      "linguagens": [
+        "typescript"
+      ],
+      "tecnologias": [
+        "react",
+        "nextjs"
+      ],
+      "notas": "Projeto de site e sistema para clínicas de optometria. Descontinuado por descumprimento de contrato / falta de pagamento."
+    }
+  ]
+}
