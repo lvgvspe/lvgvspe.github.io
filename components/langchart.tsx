@@ -56,8 +56,8 @@ const chartConfig = {
     label: "Python",
     color: generatePastelColor(0),
   },
-  typescript: {
-    label: "Typescript",
+  javascript: {
+    label: "Javascript",
     color: generatePastelColor(1),
   },
   php: {
@@ -67,11 +67,7 @@ const chartConfig = {
   net: {
     label: ".NET",
     color: generatePastelColor(3),
-  },
-  sql: {
-    label: "SQL",
-    color: generatePastelColor(4),
-  },
+  }
 } satisfies ChartConfig;
 
 export function LangChart() {

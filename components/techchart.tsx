@@ -36,7 +36,7 @@ const chartData = Object.keys(techCount)
 
 function generatePastelColor(index: number): string {
   let angulo = 200;
-  let maxCol = 5; // pra desativar é só colocar maior do que o tamanho da lista
+  let maxCol = 4; // pra desativar é só colocar maior do que o tamanho da lista
   let deslocamento = 8;
 
   // Gera um matiz (hue) baseado no índice, distribuído uniformemente
@@ -68,25 +68,21 @@ const chartConfig = {
     label: "Docker",
     color: generatePastelColor(3),
   },
-  mysql: {
-    label: "MySQL",
+  sql: {
+    label: "SQL",
     color: generatePastelColor(4),
   },
   electron: {
     label: "Electron",
     color: generatePastelColor(5),
   },
-  postgresql: {
-    label: "PostgreSQL",
-    color: generatePastelColor(6),
-  },
   expo: {
     label: "Expo",
-    color: generatePastelColor(7),
+    color: generatePastelColor(6),
   },
   reactnative: {
     label: "React Native",
-    color: generatePastelColor(8),
+    color: generatePastelColor(7),
   },
 } satisfies ChartConfig;
 

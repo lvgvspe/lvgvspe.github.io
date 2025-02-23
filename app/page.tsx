@@ -76,7 +76,7 @@ export default function Home() {
           { name: "Flask", variant: "outline" },
           { name: "FastAPI", variant: "outline" },
           { name: "Tk Interface", variant: "outline" },
-          { name: "TypeScript/JavaScript" },
+          { name: "JavaScript" },
           { name: "React/React Native", variant: "outline" },
           {
             name: "Electron/Nextron (Windows, Linux e macOS)",

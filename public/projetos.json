@@ -18,9 +18,8 @@
       "dataInicio": "2024-08-01",
       "dataFim": "2025-02-01",
       "linguagens": [
-        "typescript",
-        "python",
-        "sql"
+        "javascript",
+        "python"
       ],
       "tecnologias": [
         "electron",
@@ -28,7 +27,7 @@
         "nextjs",
         "aws",
         "docker",
-        "mysql"
+        "sql"
       ],
       "notas": "Sistema para windows de totem de autoatendimento, exibição de infos/publicidade e captação de oferta/dízimo para igrejas"
     },
@@ -39,17 +38,15 @@
       "dataInicio": "2024-10-01",
       "dataFim": "2025-02-01",
       "linguagens": [
-        "typescript",
-        "python",
-        "sql"
+        "javascript",
+        "python"
       ],
       "tecnologias": [
         "expo",
         "reactnative",
         "aws",
         "docker",
-        "mysql",
-        "postgresql"
+        "sql"
       ],
       "notas": "Sistema android e web para exibição de anúncios em Android TV"
     },
@@ -60,9 +57,8 @@
       "dataInicio": "2024-11-01",
       "dataFim": "2025-02-01",
       "linguagens": [
-        "typescript",
-        "python",
-        "sql"
+        "javascript",
+        "python"
       ],
       "tecnologias": [
         "electron",
@@ -70,7 +66,7 @@
         "nextjs",
         "aws",
         "docker",
-        "mysql"
+        "sql"
       ],
       "notas": "Sistema web de replicação de vídeos entre redes sociais"
     },
@@ -81,13 +77,12 @@
       "dataInicio": "2024-02-01",
       "dataFim": "2024-03-01",
       "linguagens": [
-        "typescript",
-        "sql"
+        "javascript"
       ],
       "tecnologias": [
         "react",
         "nextjs",
-        "postgresql"
+        "sql"
       ],
       "notas": "Sistema de gerenciamento de horários e vencimentos de prestadores de serviço de eletrotécnica"
     },
@@ -100,8 +95,7 @@
       "linguagens": [
         "python",
         "net",
-        "php",
-        "typescript"
+        "javascript"
       ],
       "tecnologias": [
         "docker"
@@ -115,7 +109,7 @@
       "dataInicio": "2021-02-01",
       "dataFim": "2021-02-15",
       "linguagens": [
-        "typescript"
+        "javascript"
       ],
       "tecnologias": [
         "react",
@@ -130,7 +124,7 @@
       "dataInicio": "2024-02-01",
       "dataFim": "2024-06-01",
       "linguagens": [
-        "typescript"
+        "javascript"
       ],
       "tecnologias": [
         "react",
