@@ -36,7 +36,7 @@ const chartData = Object.keys(techCount)
 
 function generatePastelColor(index: number): string {
   let angulo = 200;
-  let maxCol = 7; // pra desativar é só colocar maior do que o tamanho da lista
+  let maxCol = 100; // pra desativar é só colocar maior do que o tamanho da lista
   let deslocamento = 8;
 
   // Gera um matiz (hue) baseado no índice, distribuído uniformemente
@@ -54,35 +54,59 @@ function generatePastelColor(index: number): string {
 const chartConfig = {
   react: {
     label: "React",
-    color: generatePastelColor(0),
+    theme: {
+      light: generatePastelColor(0),
+      dark: generatePastelColor(8),
+    }
   },
   nextjs: {
     label: "Next.JS",
-    color: generatePastelColor(1),
+    theme: {
+      light: generatePastelColor(1),
+      dark: generatePastelColor(9),
+    }
   },
   aws: {
     label: "AWS",
-    color: generatePastelColor(2),
+    theme: {
+      light: generatePastelColor(2),
+      dark: generatePastelColor(10),
+    }
   },
   docker: {
     label: "Docker",
-    color: generatePastelColor(3),
+    theme: {
+      light: generatePastelColor(3),
+      dark: generatePastelColor(11),
+    }
   },
   sql: {
     label: "SQL",
-    color: generatePastelColor(4),
+    theme: {
+      light: generatePastelColor(4),
+      dark: generatePastelColor(12),
+    }
   },
   electron: {
     label: "Electron",
-    color: generatePastelColor(5),
+    theme: {
+      light: generatePastelColor(5),
+      dark: generatePastelColor(13),
+    }
   },
   expo: {
     label: "Expo",
-    color: generatePastelColor(6),
+    theme: {
+      light: generatePastelColor(6),
+      dark: generatePastelColor(14),
+    }
   },
   reactnative: {
     label: "React Native",
-    color: generatePastelColor(7),
+    theme: {
+      light: generatePastelColor(7),
+      dark: generatePastelColor(15),
+    }
   },
 } satisfies ChartConfig;
 

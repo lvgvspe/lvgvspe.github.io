@@ -54,27 +54,38 @@ function generatePastelColor(index: number): string {
 const chartConfig = {
   python: {
     label: "Python",
-    color: generatePastelColor(0),
+    theme: {
+      light: generatePastelColor(0),
+      dark: generatePastelColor(8),
+    }
   },
   javascript: {
     label: "Javascript",
-    color: generatePastelColor(1),
-  },
-  php: {
-    label: "PHP",
-    color: generatePastelColor(2),
+    theme: {
+      light: generatePastelColor(1),
+      dark: generatePastelColor(9),
+    }
   },
   net: {
     label: ".NET",
-    color: generatePastelColor(3),
+    theme: {
+      light: generatePastelColor(2),
+      dark: generatePastelColor(10),
+    }
   },
   bash: {
     label: "Bash",
-    color: generatePastelColor(4),
+    theme: {
+      light: generatePastelColor(3),
+      dark: generatePastelColor(11),
+    }
   },
   powershell: {
     label: "PowerShell",
-    color: generatePastelColor(5),
+    theme: {
+      light: generatePastelColor(4),
+      dark: generatePastelColor(12),
+    }
   }
 } satisfies ChartConfig;
 
