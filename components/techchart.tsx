@@ -1,13 +1,9 @@
-"use client";
-
-import { TrendingUp } from "lucide-react";
 import { LabelList, Pie, PieChart } from "recharts";
 
 import {
   Card,
   CardContent,
   CardDescription,
-  CardFooter,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
@@ -18,6 +14,7 @@ import {
   ChartTooltipContent,
 } from "@/components/ui/chart";
 import projetos from "@/public/projetos.json";
+
 // Dados para o gráfico de pizza (Distribuição de linguagens)
 const techCount = projetos.data.reduce((acc, projeto) => {
   projeto.tecnologias.forEach((tech) => {
